@@ -72,6 +72,10 @@
     color: #B9FF53;
 }
 
+.navbar-section.center a:active {
+    scale: calc(0.95);
+}
+
 .user-button {
     display: inline-block;
     padding: 10px 20px;
@@ -89,6 +93,10 @@
     background: white;
     color: #B9FF53 ;
     border: 2px solid #B9FF53;
+}
+
+.user-button:active {
+    scale: calc(0.95);
 }
   
   

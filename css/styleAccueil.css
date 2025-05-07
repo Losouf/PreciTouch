@@ -17,6 +17,9 @@
     width: 100%;
     gap: 60px;
     flex-wrap: wrap;
+    animation: fadeSlideIn 2s ease forwards;
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 .hero-dark-text {
@@ -46,7 +49,6 @@
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
-    gap: 10px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
@@ -63,6 +65,11 @@
 
 .hero-btn:hover {
     background-color: #B9FF53;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.1);
+}
+
+.hero-btn:active {
+    scale: calc(0.95);
 }
 
 .hero-btn:hover i {
@@ -86,7 +93,18 @@
     object-fit: contain;
 }
 
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .hero-dark {
+        height: 100vh;
+    }
+
     .hero-dark-content {
         flex-direction: column;
         text-align: center;
@@ -94,6 +112,10 @@
 
     .hero-dark-text, .hero-dark-image {
         flex: unset;
+    }
+
+    .hero-dark-image {
+        display: none;
     }
 
     .hero-dark-text h1 {
