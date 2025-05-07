@@ -12,4 +12,12 @@ html{
 body {
     background: #d2d2d2;
     color: #000;
+    padding-top: 100px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        padding-top: 0px;
+    }
 }

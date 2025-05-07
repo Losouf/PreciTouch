@@ -31,12 +31,9 @@
             </div>
         </div>  
         
-        <!-- Bouton hamburger mobile -->
         <div class="mobile-menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
-        
-        <!-- Menu mobile plein écran -->
         <div class="mobile-fullscreen-menu" id="mobileMenu">
             <div class="close-btn" id="closeMenu">
                 <i class="fas fa-times"></i>
@@ -52,22 +49,20 @@
         </div>
     </header>   
     
-    <script>
-        const toggle = document.querySelector('.mobile-menu-toggle');
-        const menu = document.getElementById('mobileMenu');
-        const close = document.getElementById('closeMenu');
-      
-        toggle.addEventListener('click', () => {
-          menu.classList.add('active');
-          document.body.classList.add('menu-open');
-        });
-      
-        close.addEventListener('click', () => {
-          menu.classList.remove('active');
-          document.body.classList.remove('menu-open');
-        });
-      </script>
-      
-      
+    <section class="hero-dark">
+        <div class="hero-dark-content">
+            <div class="hero-dark-text">
+                <h1>Découvrez la viticulture de précision sous un nouvel angle</h1>
+                <p><em>bla bla bla bla bla bla bla bla petite description...</em></p>
+                <a href="#" class="hero-btn">Découvrir<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-dark-image">
+                <img src="images/PreciTouchLogo.png" alt="Produit Preci'Touch">
+            </div>
+        </div>
+    </section>
+          
+
+    <script src="javascript/scriptToogleNavbar.js"></script>
 </body>
 </html>
