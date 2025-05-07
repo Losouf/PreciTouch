@@ -1,4 +1,4 @@
-.hero-dark {
+.hero {
     background-color: #fff;
     color: #000;
     padding: 100px 20px;
@@ -8,7 +8,7 @@
     height: calc(100vh - 100px);
 }
 
-.hero-dark-content {
+.hero-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,19 +22,19 @@
     transform: translateY(50px);
 }
 
-.hero-dark-text {
+.hero-text {
     flex: 1;
     min-width: 280px;
 }
 
-.hero-dark-text h1 {
+.hero-text h1 {
     font-size: 2.8rem;
     font-weight: 800;
     margin-bottom: 20px;
     color: #000;
 }
 
-.hero-dark-text p {
+.hero-text p {
     color: #d2d2d2;
     font-size: 1rem;
     line-height: 1.6;
@@ -80,14 +80,14 @@
     transform: translateX(4px);
 }
 
-.hero-dark-image {
+.hero-image {
     flex: 1;
     min-width: 280px;
     display: flex;
     justify-content: center;
 }
 
-.hero-dark-image img {
+.hero-image img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
@@ -101,24 +101,24 @@
 }
 
 @media screen and (max-width: 768px) {
-    .hero-dark {
+    .hero {
         height: 100vh;
     }
 
-    .hero-dark-content {
+    .hero-content {
         flex-direction: column;
         text-align: center;
     }
 
-    .hero-dark-text, .hero-dark-image {
+    .hero-text, .hero-image {
         flex: unset;
     }
 
-    .hero-dark-image {
+    .hero-image {
         display: none;
     }
 
-    .hero-dark-text h1 {
+    .hero-text h1 {
         font-size: 2rem;
     }
 }

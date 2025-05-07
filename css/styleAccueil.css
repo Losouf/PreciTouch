@@ -73,9 +73,9 @@
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     position: relative;
-    transition: color 0.3s;
+    transition: all 0.3s;
 }
 
 .actu-btn::after {
@@ -110,6 +110,36 @@
 
 .actu-btn:hover i {
     transform: translateX(4px);
+} 
+
+.plus-btn {
+    color: #000;
+    border: #000 2px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin-top: 40px;
+    transition: all 0.3s;
 }
-  
+
+.plus-btn:hover {
+    background-color: #B9FF53;
+}
+
+.plus-btn:active {
+    scale: calc(0.95);
+}
+
+.plus-btn i {
+    transition: all 0.3s ease;
+}
+
+.plus-btn:hover i {
+    transform: translateX(4px);
+}
   
